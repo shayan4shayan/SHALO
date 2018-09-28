@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">sabt</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="login_desc">If you dont have an account you can register by tap register button above</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="msg_username_or_password_empty">Username or password is Empty</string>
+    <string name="error_login">Login Error , please check username and password</string>
+    <string name="register_desc">If you already have an account you can login by click on login</string>
+    <string name="name">name</string>
+    <string name="lastName">Last name</string>
+    <string name="email">Email</string>
+    <string name="error_upload_file">Error Upload package</string>
+</resources>

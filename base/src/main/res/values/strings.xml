@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Base</string>
+    <string name="error_noConnection">اینترنت در دسترس نیست</string>
+    <string name="error_timeout">خطای اتمام زمان درخواست</string>
+    <string name="error_server">خطای سرور</string>
+    <string name="error_network">خطای شبکه</string>
+    <string name="error_unknown">خطای ناشناخته</string>
+    <string name="yes">بله</string>
+    <string name="no">خیر</string>
+    <string name="cancel">لغو</string>
+    <string name="msg_connected_to_network">دستگاه به اینترنت متصل شد</string>
+    <string name="loading">لطفا کمی صبر کنید</string>
+    <string name="ok">باشه</string>
+</resources>

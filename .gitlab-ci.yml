@@ -1,0 +1,20 @@
+before_script:
+  - export ANDROID_HOME="/opt/android-sdk"
+  - export PATH=$PATH:"$ANDROID_HOME/tools"
+
+stages:
+  - build
+
+build:
+  stage: build
+  script:
+    - ./gradlew assembleRelease
+    - 'TOKEN="$(curl -F "username=$SABT_ADMIN_USERNAME" -F "password=$SABT_ADMIN_PASSWROD" http://sabt.syfract.com/login/ -s | cut -c 11-50)"'
+    - 'curl -H "Authorization: Token $TOKEN" -F "file=@app/build/outputs/apk/release/app-release.apk" http://sabt.syfract.com/new/'
+  artifacts:
+    paths:
+    - app/build/outputs/
+  only:
+    variables:
+      - $CI_COMMIT_MESSAGE =~ /^Release:*/i
+
